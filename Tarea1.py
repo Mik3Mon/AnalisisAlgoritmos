@@ -21,14 +21,19 @@ def num_grande2(a):
     return grande
 
 def nums_grandes(a):
-    grande = a[0]
-    grande2 = a[0]
+    if(a[0] > a[1]):
+        grande = a[0]
+        grande2 = a[1]
+    else:
+        grande = a[1]
+        grande2 = a[0]
     for i in a:
         if(i > grande):
+            grande2 = grande
             grande = i
-            for j in a:    
-                if(j > grande2 and j < grande):
-                    grande2 = j
+        else:
+            if(i > grande2):
+                grande2 = i
     return grande, grande2
 
 def cad_grande(a):
@@ -37,11 +42,11 @@ def cad_grande(a):
 
     
 if __name__=="__main__":
+    Lista = [90,80,700,0,45,46,100]
     print("Ejercicio 1")
     print(num_grande(10, 8, 15))
     
     print("Ejercicio 2")
-    Lista = [10,80,7,0,45,46]
     print(num_grande2(Lista))
     
     print("Ejercicio 3")
