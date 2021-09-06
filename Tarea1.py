@@ -41,7 +41,7 @@ if __name__=="__main__":
     print(num_grande(10, 8, 15))
     
     print("Ejercicio 2")
-    Lista = [10,15,7,0,45,46]
+    Lista = [10,80,7,0,45,46]
     print(num_grande2(Lista))
     
     print("Ejercicio 3")
