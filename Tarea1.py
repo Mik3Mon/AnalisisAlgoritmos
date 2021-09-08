@@ -43,6 +43,7 @@ def cad_grande(a):
     
 if __name__=="__main__":
     Lista = [90,80,700,0,45,46,100]
+    Lista2 = ["Miguel","Juan","Angel","Jose"]
     print("Ejercicio 1")
     print(num_grande(10, 8, 15))
     
