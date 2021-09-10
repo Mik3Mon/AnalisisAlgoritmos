@@ -6,16 +6,11 @@ Created on Thu Sep  9 21:50:58 2021
 """
 
 def sumaMayor(L):
-    if len(L) == 1:
-        print("La secuencia de numero que da la suma mayor es: " + str(L))
-        print("La mayor suma posible es" + str(L))
-        return L[0]
     if len(L) == 0:
         print("Ingresa una lista con datos validos")
     else:
         tmp = 0
         suma2 = 0
-        copia = []
         while(tmp <= len(L)):
             suma = 0
             copia = []

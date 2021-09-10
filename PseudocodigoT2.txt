@@ -1,0 +1,36 @@
+Lista = [27,6,-50,21,-3,14,16,-8,42,33,-21,9]
+	  
+          |
+	
+Entrada: Lista de numeros enteros.
+
+Salida: La suma maxima de valores consecutivos en la lista inicial.
+
+Precision: Si se da una lista vacia, se solicitara una lista con almenos un valor.
+
+sumaMayor(L[]){
+	if(L.longitud == 0)
+		print("Ingresa una lista con datos validos")
+	else
+		tmp = 0
+		suma2 = 0
+		while(tmp <= L.longitud)
+			suma = 0
+			copia = []
+			for i in range(tmp, L.longitud)
+				suma += L[i]
+				copia.agregarLista
+				if(suma > suma2)
+					copia2 = copia.copiar
+					suma2 = suma
+			tmp = tmp+1
+		print("La secuencia de numero que da la suma mayor es: " + copia2)
+		print('La mayor suma posible es ' + suma2)
+}
+
+
+suma = 0
+suma2 = 0
+tmp = 0
+copia = []
+copia2 = []
