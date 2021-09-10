@@ -27,13 +27,13 @@ def nums_grandes(a):
     else:
         grande = a[1]
         grande2 = a[0]
-    for i in a:
-        if(i > grande):
+    for i in range(2,len(a)):
+        if(grande < a[i]):
             grande2 = grande
-            grande = i
+            grande = a[i]
         else:
-            if(i > grande2):
-                grande2 = i
+            if(grande2 < a[i]):
+                grande2 = a[i]
     return grande, grande2
 
 def cad_grande(a):
@@ -42,7 +42,7 @@ def cad_grande(a):
 
     
 if __name__=="__main__":
-    Lista = [90,80,700,0,45,46,100]
+    Lista = [900,8000,700,0,45,46,100]
     Lista2 = ["Miguel","Juan","Angel","Jose"]
     print("Ejercicio 1")
     print(num_grande(10, 8, 15))
