@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep  9 21:50:58 2021
+
+@author: Mike
+"""
+
+def sumaMayor(L):
+    if len(L) == 1:
+        return L[0]
+    tmp = 0
+    suma2 = 0
+    while(tmp <= len(L)):
+        suma = 0
+        for i in range(tmp, len(L)):
+            suma += L[i]
+            if(suma > suma2):
+                suma2 = suma
+        tmp = tmp+1
+    print('La mayor suma posible es ' + str(suma2))
+
+if __name__=="__main__":
+    Lista = [27,6,-50,21,-3,14,16,-8,42,33,-21,9]
+    sumaMayor(Lista)
