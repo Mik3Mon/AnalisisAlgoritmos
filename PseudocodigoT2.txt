@@ -16,15 +16,11 @@ sumaMayor(L[]){
 		suma2 = 0
 		while(tmp <= L.longitud)
 			suma = 0
-			copia = []
 			for i in range(tmp, L.longitud)
 				suma += L[i]
-				copia.agregarLista
 				if(suma > suma2)
-					copia2 = copia.copiar
 					suma2 = suma
 			tmp = tmp+1
-		print("La secuencia de numero que da la suma mayor es: " + copia2)
 		print('La mayor suma posible es ' + suma2)
 }
 
@@ -32,5 +28,4 @@ sumaMayor(L[]){
 suma = 0
 suma2 = 0
 tmp = 0
-copia = []
-copia2 = []
+hola

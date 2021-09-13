@@ -1,0 +1,16 @@
+lista=[27,6,-50,21]
+for(i=0;i<l.longitud;i++)
+   for(j=0;j<i;j++)
+      tabla[i][j]=tabla[i-1][j]+lista[i]	
+
+max=tabla[0][0]
+indiceUno = 0
+indiceDos = 0
+for(i=0;i<l.longitud;i++)
+   for(j=0;j<i;j++)
+      if(tabla[i][j] > max)
+        	max = tabla[i][j]
+		indiceUno = i
+		indiceDos = j
+max
+print(lista[i:j+1]
