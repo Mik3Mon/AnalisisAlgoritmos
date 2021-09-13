@@ -23,6 +23,5 @@ def sumaMayor(L):
 if __name__=="__main__":
     Lista = [27,6,-50,21,-3,14,16,-8,42,33,-21,9]
     sumaMayor(Lista)
-    print("Hola")
     
     

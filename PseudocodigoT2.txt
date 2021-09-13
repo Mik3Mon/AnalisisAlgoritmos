@@ -28,4 +28,3 @@ sumaMayor(L[]){
 suma = 0
 suma2 = 0
 tmp = 0
-hola
