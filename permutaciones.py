@@ -32,10 +32,10 @@ def permutaciones(n):
     listaF.append(list(s))
     for i in range(1, factorial(len(n))):
         m = len(n) - 2
-        while(s[m] > s[m + 1]):
+        while(s[m] >= s[m + 1]):
             m = m -1
         k = len(n) - 1
-        while(s[m] > s[k]):
+        while(s[m] >= s[k]):
             k = k - 1
         swap(s, m, k)
         p = m + 1
@@ -49,11 +49,13 @@ def permutaciones(n):
     return listaF
             
 if __name__=="__main__":
-    lista = [1,2,3]
+    lista = [1,1,1,2,2,2,2,2,2]
     l = permutaciones(lista)
     print(l)
-    lista2 = list(permutations(["u","r","r"]))
-    listaF = list(set(lista2))
-    print(lista2)
+    print(len(l))
+    
+    #lista2 = list(permutations(["u","r","r"]))
+    #listaF = list(set(lista2))
+    #print(lista2)
     
     
