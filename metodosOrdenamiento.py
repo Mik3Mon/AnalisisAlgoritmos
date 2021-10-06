@@ -68,9 +68,7 @@ def particion(lista,primero,ultimo):
    return marcaDer
 
 if __name__=="__main__":
-    lista = [34,5,23,98,557,34]
-    metodo_burbuja(lista)
-    metodo_quicksort(lista)
-    print(lista)
+    lista = [34,5,23,98,557,34,100]
+    metodo_insercion(lista)
     print(lista)
     
