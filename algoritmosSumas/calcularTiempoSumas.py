@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep 29 11:48:11 2021
+Created on Sat Oct  9 16:47:14 2021
 
 @author: Mike
 """
-import metodosOrdenamiento
-import sumaMaxima
-import Tarea3
+
+import algoritmosSumas
 import random as rn
 import copy
 from time import time
@@ -25,7 +24,7 @@ if __name__=="__main__":
     for i in range(100,150,2):
         lista_nueva = copy.deepcopy(lista[:x])
         inicio_tiempo = time()
-        sumaMaxima.sumaMaxima(lista_nueva)
+        algoritmosSumas.sumaMaxima(lista_nueva)
         transcurrido = time() - inicio_tiempo
         archivo.write(str(x)+";"+format(transcurrido,".5f")+"\n")
         x = x + 2
@@ -36,7 +35,7 @@ if __name__=="__main__":
     for i in range(100,150,2):
         lista_nueva = copy.deepcopy(lista[:x])
         inicio_tiempo = time()
-        Tarea3.maxSuma(lista_nueva)
+        algoritmosSumas.sumaMaxima2(lista_nueva)
         transcurrido = time() - inicio_tiempo
         archivo.write(str(x)+";"+format(transcurrido,".5f")+"\n")
         x = x + 2
@@ -47,12 +46,12 @@ if __name__=="__main__":
     for i in range(100,150,2):
         lista_nueva = copy.deepcopy(lista[:x])
         inicio_tiempo = time()
-        Tarea3.maxSuma2(lista_nueva)
+        algoritmosSumas.sumaMaxima3(lista_nueva)
         transcurrido = time() - inicio_tiempo
         archivo.write(str(x)+";"+format(transcurrido,".5f")+"\n")
         x = x + 2
     archivo.close()
     print(lista)
-    print(sumaMaxima.sumaMaxima(lista))
-    print(Tarea3.maxSuma(lista))
-    print(Tarea3.maxSuma2(lista))
+    print(algoritmosSumas.sumaMaxima(lista))
+    print(algoritmosSumas.sumaMaxima2(lista))
+    print(algoritmosSumas.sumaMaxima3(lista))
