@@ -25,16 +25,13 @@ def metodo_seleccion(lista):
             lista[minimo] = aux
             
 def metodo_insercion(lista):
-    for i in range(1,len(lista)):
-        valor = lista[i]
-        indice = i - 1
-        while (i >= 0):
-            if(valor < lista[indice]):
-                lista[i+1] = lista[i]
-                lista[i] = valor
-                indice = indice - 1
-            else:
-                break
+    for j in range(1,len(lista)):
+        i = j - 1
+        x = lista[j]
+        while (x < lista[i] and i >= 0):
+            lista[i+1] = lista[i]
+            i = i - 1
+        lista[i+1] = x
                 
 def metodo_quicksort(lista):
    quicksort_auxiliar(lista,0,len(lista)-1)
@@ -66,3 +63,18 @@ def particion(lista,primero,ultimo):
    lista[marcaDer] = temp
 
    return marcaDer
+
+if __name__=="__main__":
+    Lista = [-4, -77, -136, 52, -2, -49, 92, -118, -76, 146, 97, 120, -145, -127, 69, 17, 115, -31, -43, -3, -26, -127, -126, -140, -80, -95, -41, -39, 37, 23, -61, 68, -115, -133]
+    print("Metodo Burbuja")
+    metodo_burbuja(Lista)
+    print(Lista)
+    print("Metodo Selección")
+    metodo_seleccion(Lista)
+    print(Lista)
+    print("Metodo Inserción")
+    metodo_insercion(Lista)
+    print(Lista)
+    print("Metodo QuickSort")
+    metodo_quicksort(Lista)
+    print(Lista)
