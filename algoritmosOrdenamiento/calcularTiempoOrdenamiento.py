@@ -13,7 +13,7 @@ from time import time
 def crear_lista(longitud):
     lista = []
     for i in range(0,longitud):
-        lista.append(rn.randint(0, 200))
+        lista.append(rn.randint(-500, 500))
     return lista
 
 if __name__=="__main__":
