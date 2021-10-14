@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Sep 20 12:08:39 2021
+Created on Wed Oct 13 21:41:59 2021
 
 @author: Mike
 """
-
-from itertools import permutations
 
 def factorial(valor):
     bandera = 1
@@ -53,9 +51,3 @@ if __name__=="__main__":
     l = permutaciones(lista)
     print(l)
     print(len(l))
-    
-    #lista2 = list(permutations(["u","r","r"]))
-    #listaF = list(set(lista2))
-    #print(lista2)
-    
-    
