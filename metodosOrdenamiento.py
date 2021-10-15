@@ -23,6 +23,7 @@ def metodo_seleccion(lista):
             aux = lista[i]
             lista[i] = lista[minimo]
             lista[minimo] = aux
+        
             
 def metodo_insercion(lista):
     for i in range(1,len(lista)):
