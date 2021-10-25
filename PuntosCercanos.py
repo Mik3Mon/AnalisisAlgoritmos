@@ -22,7 +22,7 @@ def graficas(puntos):
     for indice in range(len(puntos)):
         x.append(int(puntos[indice][0]))
         y.append(int(puntos[indice][1]))
-    line, =ax.plot(x,y,'o',picker=5)
+    line, =ax.plot(x,y,'*',picker=5)
     
     puntosSeleccionado=fig.canvas.mpl_connect('pick_event',onpick)
     plt.show()
@@ -41,16 +41,12 @@ def onpick(event):
 def segundaVentana(listaPunto):
     figDos=plt.figure()
     a=figDos.add_subplot(111)
-    #b=figDos.add_subplot(111)
-    #c=figDos.add_subplot(111)
     puntos=distanciaMinima(listaPunto)
     print(puntos)
-    line, =a.plot((listaPunto[0], puntos[0]), (listaPunto[1], puntos[1]), 'b.', picker=5)
-    #line2, =b.plot(listaPunto[0],listaPunto[1],'ro')
-    #line3, =c.plot(puntos[0],puntos[1],'g^')
+    line, =a.plot(x, y, '*', picker=5)
+    line, =a.plot((listaPunto[0], puntos[0]), (listaPunto[1], puntos[1]), '*', picker=5)
 
 def distanciaMinima(listaPunto):
-    #minimo=math.sqrt(pow((int(x[0])-int(listaPunto[0])),2)+pow((int(y[0])-int(listaPunto[1])),2))
     minimo = 100
     puntos=[]
     for indice in range(len(x)):
