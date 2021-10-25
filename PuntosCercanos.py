@@ -45,7 +45,7 @@ def segundaVentana(listaPunto):
     #c=figDos.add_subplot(111)
     puntos=distanciaMinima(listaPunto)
     print(puntos)
-    line, =a.plot(listaPunto[0],listaPunto[1],'b.',picker=5)
+    line, =a.plot((listaPunto[0], puntos[0]), (listaPunto[1], puntos[1]), 'b.', picker=5)
     #line2, =b.plot(listaPunto[0],listaPunto[1],'ro')
     #line3, =c.plot(puntos[0],puntos[1],'g^')
 
