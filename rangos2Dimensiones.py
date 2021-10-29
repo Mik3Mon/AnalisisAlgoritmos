@@ -18,14 +18,12 @@ def encontrar_rango(central,fin):
     return rango
 
 
-    
-    
-
 if __name__=="__main__":
-    lista = [[21, 1], [7, 26], [6, 24], [25, 5], [14, 25], [9, 15], [23, 2], [3, 11], [1, 10], [7, 12]]
-    central = int(len(lista)/2)
-    fin = int(len(lista))
+    lista = [[1,10],[3,11],[6,24],[7,12],[7,26],[9,15],[14,25],[21,1],[23,2],[25,5]]
+    central = len(lista)//2
+    fin = len(lista)-1
     print(central)
+    print(fin)
     print(lista)
     metodosOrdenamiento.metodo_quicksort(lista)
     print(lista)

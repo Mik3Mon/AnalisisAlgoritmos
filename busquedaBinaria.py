@@ -20,5 +20,5 @@ def busquedaBinaria(Lista, clave, inferior = 0, superior = 0):
     
 if __name__=="__main__":
     Lista = [3,8,15,25,95,100,153,1456] 
-    print(busquedaBinaria(Lista, 1456))
+    print(busquedaBinaria(Lista, 15))
     
